@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objectifs</title>
+    <!-- <link rel="stylesheet" href="new.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .navbar-nav{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    /* font-weight: 500; */
+    
+   
+}
+.navbar-light .navbar-brand{
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.navbar-brand .navbar-light:focus,
+.navbar-light .navbar-brand:hover{
+    color: #000;
+}
+.navbar-light .navbar-brand .navbar-nav{
+    color: #000;
+}
+.w-100{
+    height: 100vh;
+}
+.cc-navbar {
+           background-color: gray;
+            box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.54);
+            z-index: 99;
+            width: 100%;
+            background-size: cover;
+            background-position: 10%;
+
+        }
+
+        .left {
+            width: 10vw;
+            height: 15wh;
+        }
+        .view{
+                font-size: 30px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        
+        .other {
+            
+            margin-left: 150px;
+        }
+
+        .off {
+            color: black;
+            font-size: 110px;
+            margin-left: 170px;
+            margin-right: 20px;
+        }
+
+
+        .oft {
+            margin-left: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #sever {
+            border: 1px solid orange;
+            border-radius: 100%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: green;
+            margin-left: 80px;
+        }
+
+      
+        .none {
+            margin-top: 100px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+
+        }
+
+        h6 {
+            color: white;
+            /* border: 1px solid red;
+      display: flex;
+      justify-content: center; */
+        }
+
+        h1 {
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            color: black;
+
+        }
+
+        .dropdown-menu {
+            background-color: transparent;
+            color: #fff;
+        }
+
+        /* pour objectif */
+        .jolie {
+            background-color: #fff;
+
+
+        }
+
+        .jolie:hover {
+            background-color: green;
+            margin: 5px;
+            transition: 1s;
+        }
+
+        h4 {
+            padding: 5px;
+            margin: 5px;
+            text-align: center;
+
+        }
+
+        .root {
+            width: 30vw;
+            height: 50vh;
+        }
+
+        .aa {
+            text-decoration: underline solid black;
+            font-size: 15px;
+            margin: 20px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            /* display: flex; */
+            text-align: justify;
+            /* padding-left: 100px solid; */
+        }
+
+        dd {
+            width: 10PX;
+        }
+
+        .objectif {
+            margin: 20px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            /* display: flex; */
+            text-align: justify;
+            /* padding-left: 100px solid; */
+
+        }
+
+        .fall {
+            margin: 10px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            /* display: flex; */
+            text-align: justify;
+            /* padding-left: 100px solid; */
+        }
+
+        .sale {
+
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: inherit;
+        }
+
+        .ram {
+            color: white;
+        }
+
+        .roat {
+            /* border: 1px solid red; */
+            display: flex;
+        }
+
+        .soul {
+           margin-top: 50px;
+        }
+        /* .done{
+           
+            margin-top: 100px;
+        } */
+        .rot{
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            /* display: flex; */
+            text-align: justify;
+            /* padding-left: 100px solid; */
+        }
+        .aide{
+  
+  margin-bottom: 50px;
+ font-size: 30px;
+font-family: 'Times New Roman', Times, serif;
+font-style: inherit;
+color: white;
+}
+.server{
+color: white;
+
+}
+.sona{
+  text-align: center;
+  margin-top: 100px;
+}
+.want{
+     text-align: justify;
+  margin-top: 100px;
+ }
+    </style>
+</head>
+
+<body>
+    <!-- <p>nav bar</p> -->
+    <nav class=" cc-navbar navbar navbar-expand-lg navbar-dark fixed-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><strong class="view"><span class="text-success">Bon</span><span class="text-dark">Berger</span></a></strong>  
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="  navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="  nav-item pe-4">
+                        <a class="nav-link" aria-current="page" href="accueil.html">Acceuil</a>
+                    </li>
+                    <li class="nav-item pe-4">
+                        <a class="nav-link" href="evenement.html">Evènements</a>
+                    </li>
+                    </li>
+                    <li class="nav-item pe-4">
+                        <a class="nav-link active " href="objectifs.html">Objectifs</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="competences.html">Domaines de compétences</a></li>
+                            <li><a class="dropdown-item" href="interventions.html">Domaines d'interventions</a></li>
+
+                        </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            A Propos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="mission.html">Mission</a></li>
+                            <li><a class="dropdown-item" href="valeur.html">Valeur</a></li>
+                            <li><a class="dropdown-item" href="vision.html">Vision</a></li>
+
+            </div>
+        </div>
+    </nav>
+    <section>
+        <br>
+        <br>
+        <br>
+    </section>
+
+    <section class=" dd">
+        <div class=" jolie container-fluid ">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="sale">
+                        OBJECTIFS
+                    </h1>
+
+                    <h4 class="sale">
+                        Forger un Futur Rayonnant de Possibilités
+                    </h4>
+                </div>
+    </section>
+    <div class="container-fluid">
+        <p class="objectif">
+            Bienvenue dans l'univers de l'action et de la transformation, où chaque objectif que nous
+            poursuivons
+            est un pas vers un avenir plus radieux. Chez nous, chaque action a une signification
+            profonde. Découvrez comment notre entreprise,
+            <strong class="cc"> "Bon Berger"</strong>, se positionne pour transformer des aspirations en réalités
+            tangibles.
+            <br>
+        </p>
+        <div class="container">
+            <div class="row">
+                <div class="card mb-3 border-0 rounded-0">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/bee.webp" class="img-fluid" alt="..." />
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body px-0">
+                                <p class="card-text">
+                                    <li> <strong class="aa">Lutte Contre la Pauvreté et l'Insécurité Alimentaire :</li>
+                                    </strong>
+                                <p class="fall">Notre mission
+                                    transcende les barrières de la faim et de la pauvreté.
+                                    Nous sommes déterminés à développer des activités génératrices de revenus qui
+                                    élargissent
+                                    les horizons,
+                                    à promouvoir un emploi durable qui ouvre des portes vers l'autonomie financière.</p>
+
+                                <strong class="cc"></strong>
+                                <p class="fall">L'agriculture, l'élevage,
+                                    l'aquaculture et la transformation agroalimentaire</strong> sont autant
+                                    d'opportunités que nous
+                                    exploiterons pour apporter
+                                    un changement significatif dans les vies.</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- <br> -->
+
+            <!-- <p>deuxieme partie</p> -->
+            <div class="row">
+                <div class="card mb-3 border-0 rounded-0">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card-body px-0">
+                                <p class="card-text">
+                                    <li> <strong class="aa">Lutte Contre la Pauvreté et l'Insécurité Alimentaire :</li>
+                                    </strong>
+                                <p class="fall">Notre mission
+                                    transcende les barrières de la faim et de la pauvreté.
+                                    Nous sommes déterminés à développer des activités génératrices de revenus qui
+                                    élargissent
+                                    les horizons,
+                                    à promouvoir un emploi durable qui ouvre des portes vers l'autonomie financière.</p>
+
+                                <strong class="cc"></strong>
+                                <p class="fall">L'agriculture, l'élevage,
+                                    l'aquaculture et la transformation agroalimentaire</strong> sont autant
+                                    d'opportunités que nous
+                                    exploiterons pour apporter
+                                    un changement significatif dans les vies.</p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="images/pre.jpg" class=" soul img-fluid" alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- <br> -->
+            <!-- <p>troisieme partie</p> -->
+            <div class="row">
+                <div class="card mb-3 border-0 rounded-0">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/ret.jpg" class="img-fluid" alt="..." />
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body px-0">
+                                <p class="card-text">
+                                    <li><strong class="aa">Éducation, Enseignement Technique et Formation :</li></strong>
+                                    <p class="fall">Le savoir est
+                                        un trésor précieux. Nous croyons en la puissance
+                                        de l'éducation et de la formation pour façonner un avenir meilleur. Notre entreprise
+                                        s'engage à développer
+                                        des programmes éducatifs , à intégrer la santé et le droit sexuel reproductif,
+                                        offrant ainsi une éducation
+                                        qui prépare les individus à des vies épanouissantes et responsables.</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- <br> -->
+            <!-- <p>quatrieme partie</p> -->
+            <div class="row">
+                <div class="card mb-3 border-0 rounded-0">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card-body px-0">
+                                <p class="card-text done">
+                                    <li><strong class="aa"> Un Futur Modelé par l'Action : </li></strong> <strong class="cc">
+                                        <p class="fall">Chez "Bon Berger"
+                                    </strong>,
+                                    chaque objectif que nous poursuivons est
+                                    une opportunité
+                                    de façonner l'avenir que nous souhaitons voir. Chaque effort déployé, qu'il s'agisse de
+                                    <strong class="cc">créer des sources de revenus,
+                                        de préserver l'environnement ou d'éduquer les esprits</strong>, est un pas vers la transformation.</p>
+                                
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="images/aaa.jpg" class=" soul img-fluid" alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- <br> -->
+    <li><strong class="aa"> Joignez-vous à Notre Mission :</li></strong> 
+        <p class="fall">Lorsque vous vous associez à nous,
+            Vous contribuez à la
+            création d'un avenir où l'insécurité alimentaire cède la place à la
+            prospérité, où l'environnement est protégé avec soin et où l'éducation est un droit fondamental.
+            Ensemble, nous créons un avenir qui résonne d'espoir et de possibilités.
+        </p>
+ </div>
+
+
+<!-- <p>pied de page</p> -->
+<footer class="bg-success p-2 ">
+    <br>
+    <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-md-offset-1 " >
+            <a href="accueil.html" class=" aide text-decoration-none color-light">Accueil</a>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <a href="evenement.html" class="aide text-decoration-none colo-light">Evenements</a>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <a href="objectifs.html" class="aide text-decoration-none color-light">Objectifs</a>
+          </div>
+          <div class="col-md-2 col-md-offset-1">
+            <a href="valeur.html" class="aide text-decoration-none color-light">A propos</a>
+          </div>
+         </div>
+        <div class="row ">
+          <div class="col-md-4 col-md-offset-1">
+            <h4 class="want">Télephone</h4>
+            <span class="server">+229 65 06 64 88</span>
+          </div>
+          <div class="col-md-4 col-md-offset-1">
+           <h4 class="sona" >Lieu</h4>
+                <span class="server">Rép-Bénin|Dep-Borgou|Com-Parakou|Arrond-Quartier-Camp
+                  dagbè derriere l'EPP de camp dagbé</span>
+          </div>
+          <div class="col-md-4 col-md-offset-1">
+            <h4 class="want">Email</h4>
+            <span class="server">ong.aibb@gmail.com</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center py-4 text-light">
+            &copy; Copyright
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+            <p class="server">Tout droit réservées.</p>
+        </div>
+        </div>
+      </div>
+</footer>
+ <script src="js/bootstrap.bundle.js"></script>
+
+    ()
+</body>
+
+</html>

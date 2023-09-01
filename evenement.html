@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evenement</title>
+      <!-- <link rel="stylesheet" href="new.css"> -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="vendors/css/all.min.css">
+      <style>
+          
+          *{ box-sizing: border-box;}
+  
+  
+          .navbar-nav{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    /* font-weight: 500; */
+    
+   
+}
+.navbar-light .navbar-brand{
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.navbar-brand .navbar-light:focus,
+.navbar-light .navbar-brand:hover{
+    color: #000;
+}
+.navbar-light .navbar-brand .navbar-nav{
+    color: #000;
+}
+.w-100{
+    height: 100vh;
+}
+.cc-navbar {
+           background-color: gray;
+            box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.54);
+            z-index: 99;
+            width: 100%;
+            background-size: cover;
+            background-position: 10%;
+
+        }
+        .view{
+                font-size: 30px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .aide{
+  
+  margin-bottom: 50px;
+ font-size: 30px;
+font-family: 'Times New Roman', Times, serif;
+font-style: inherit;
+color: white;
+}
+.server{
+color: white;
+
+}
+.sona{
+  text-align: center;
+  margin-top: 100px;
+}
+.want{
+     text-align: justify;
+  margin-top: 100px;
+ }
+  .left{
+      width: 10vw;
+      height: 15wh;
+  }
+  
+  .other{
+      margin-left: 150px;
+  }
+  .off{
+      color:black;
+      font-size: 110px;
+      margin-left: 170px;
+      margin-right: 20px;
+  }
+ 
+  .oft{
+      margin-left: 130px;
+      display:flex ;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  
+  .none{
+      margin-top: 100px;
+      /* border: 1px solid red; */
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+  
+  }
+  h6{
+      color: white;
+      /* border: 1px solid red;
+      display: flex;
+      justify-content: center; */
+  }
+  h1{
+      /* border: 1px solid red; */
+      display: flex;
+      justify-content: center;
+      color: black;
+      
+  }
+  
+  .dropdown-menu{
+      background-color:transparent;
+      color: #fff;
+  }
+
+  /* Pour evenements */
+  .jolie {
+            background-color: #fff;
+
+
+        }
+
+        .jolie:hover {
+            background-color: green;
+            margin: 5px;
+            transition: 1s;
+        }
+        dd{
+        width: 10PX;
+       }
+
+        h4 {
+            padding: 5px;
+            margin: 5px;
+            text-align: center;
+
+        }
+        .sale {
+
+       font-size: 40px;
+       font-family: 'Times New Roman', Times, serif;
+       font-style: inherit;
+        }
+        .zone{
+            margin: 10px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            /* display: flex; */
+            text-align: justify;
+            /* padding-left: 100px solid; */
+        }
+        .aa{
+            text-decoration: underline;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+        .evenement{
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+      </style>
+</head>
+<body>
+    <!-- <p>nav bar</p> -->
+    <nav class=" cc-navbar navbar navbar-expand-lg navbar-dark fixed-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><strong class="view"><span class="text-success">Bon</span><span class="text-dark">Berger</span></a></strong>  
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="  navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="  nav-item pe-4">
+                        <a class="nav-link" aria-current="page" href="accueil.html">Acceuil</a>
+                    </li>
+                    <li class="nav-item pe-4">
+                        <a class="nav-link" href="evenement.html">Evènements</a>
+                    </li>
+                    </li>
+                    <li class="nav-item pe-4">
+                        <a class="nav-link " href="objectifs.html">Objectifs</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="competences.html">Domaines de compétences</a></li>
+                            <li><a class="dropdown-item" href="interventions.html">Domaines d'interventions</a></li>
+
+                        </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            A Propos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="mission.html">Mission</a></li>
+                            <li><a class="dropdown-item" href="valeur.html">Valeur</a></li>
+                            <li><a class="dropdown-item" href="vision.html">Vision</a></li>
+
+            </div>
+        </div>
+    </nav>
+<section>
+    <br>
+    <br>
+    <br>
+</section>
+    <section class=" dd">
+        <div class=" jolie container-fluid ">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="sale">
+                       EVENEMENTS
+                    </h1>
+
+                    <h4 class="sale">
+                        Partenariats Dynamiques pour un Avenir Éclairé
+                    </h4>
+        </div>
+    </section>
+
+    <div class="container-fluid">
+        <p class="evenement">
+            Chez "Bon Berger", notre engagement ne se limite pas à des mots, il se traduit en actions 
+            tangibles et en partenariats dynamiques. Nous croyons en la force de la collaboration pour créer 
+            un changement significatif. Voici quelques-uns des événements marquants auxquels nous avons pris part,
+            illustrant notre détermination à façonner un avenir meilleur.
+        </p>
+        <!-- <p>premiere partie</p> -->
+
+        <div class="container">
+            <div class="row">
+                <div class="card mb-3 border-0 rounded-0">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="" class="img-fluid" alt="..." />
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body px-0">
+                                <p class="card-text">
+                                    <br><li><strong class="aa">Séance de sensibilisation sur les violences basées sur le genre :</strong></li>
+                                    <p class="zone">Dans notre engagement envers l'égalité 
+                                        et la justice, nous avons organisé une séance de sensibilisation sur les violences basées sur le genre
+                                        dans les lycées agricoles au Bénin. Notre objectif était de donner aux jeunes la clarté et les ressources
+                                        nécessaires pour lutter contre ces injustices, créant ainsi un environnement d'apprentissage plus sûr
+                                        et plus inclusif.
+                                    </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <p>deuxieme partie</p> -->
+        <div class="row">
+            <div class="card mb-3 border-0 rounded-0">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card-body px-0">
+                            <p class="card-text">
+                                <br><li><strong class="aa">Séance de travail avec <strong class="cc">UDOPER ZOU COLLINES</strong> : </strong></li> 
+                                <p class="zone">
+                                    Lors de notre séance de travail fructueuse avec la direction
+                                de <strong class="cc">UDOPER ZOU COLLINES</strong>, nous avons abordé les défis spécifiques liés à la filière lait et viande.
+                                Notre échange d'idées et de perspectives a jeté les bases pour des solutions innovantes qui bénéficieront 
+                               non seulement aux acteurs de cette filière, mais aussi à l'ensemble de la communauté.
+                                </p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="" class="  img-fluid" alt="..." />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <p>troisieme partie</p> -->
+        <div class="container">
+            <div class="row">
+                <div class="card mb-3 border-0 rounded-0">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="" class="img-fluid" alt="..." />
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body px-0">
+                                <p class="card-text">
+                                    <br><li><strong class="aa">Rencontres avec <strong class="cc">UCOPER</strong>
+                                         N’dali, Dassa et <strong class="cc">HollandDoor</strong> : </strong></li>
+                                         <p class="zone">
+                                            Nous croyons au pouvoir de l'unité. Nos rencontres
+                                            fructueuses avec <strong class="cc">UCOPER</strong> N’dali, Dassa et <strong class="cc">HollandDoor</strong> ont été des moments clés pour échanger des connaissances, 
+                                            partager des expériences et établir des partenariats solides. Ensemble, nous nous engageons à catalyser le 
+                                            développement agricole et à renforcer nos efforts pour un avenir durable.
+                                         </p>  
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <p class="zone">
+        Ces événements ne sont que des exemples de notre détermination à être des acteurs de changement positif.
+        Chez <strong class="cc">"Bon Berger"</strong>, nous mettons en œuvre notre mission à travers des initiatives concrètes, des collaborations 
+        dynamiques et des actions qui laissent un impact réel.
+       </p>
+     <!-- <p>pied de page</p> -->
+ <footer class="bg-success p-2 ">
+    <br>
+    <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-md-offset-1 " >
+            <a href="accueil.html" class=" aide text-decoration-none color-light">Accueil</a>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <a href="evenement.html" class="aide text-decoration-none colo-light">Evenements</a>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <a href="objectifs.html" class="aide text-decoration-none color-light">Objectifs</a>
+          </div>
+          <div class="col-md-2 col-md-offset-1">
+            <a href="vision.html" class="aide text-decoration-none color-light">A propos</a>
+          </div>
+         </div>
+        <div class="row ">
+          <div class="col-md-4 col-md-offset-1">
+            <h4 class="want">Télephone</h4>
+            <span class="server">+229 65 06 64 88</span>
+          </div>
+          <div class="col-md-4 col-md-offset-1">
+           <h4 class="sona" >Lieu</h4>
+                <span class="server">Rép-Bénin|Dep-Borgou|Com-Parakou|Arrond-Quartier-Camp
+                  dagbè derriere l'EPP de camp dagbé</span>
+          </div>
+          <div class="col-md-4 col-md-offset-1">
+            <h4 class="want">Email</h4>
+            <span class="server">ong.aibb@gmail.com</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center py-4 text-light">
+            &copy; Copyright
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+            <p class="server">Tout droit réservées.</p>
+        </div>
+        </div>
+      </div>
+</footer>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+    
+    
+</body>
+</html>
